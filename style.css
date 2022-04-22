@@ -1,39 +1,60 @@
-h1 {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    color: black;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5DC	;
 }
 
-h3 {
-    color: white;
+/* navbar */
+nav {
+    display: flex;
+    background-color: #383636;
+    padding: 10px;
+    justify-content: space-between;
 }
 
-h4 {
-    text-align: center;
-    color: black;
+nav img {
+    float: right;
+    width: 20px;
+    height: 20px;
 }
 
-#judulLogo{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+nav .logo {
+    font-family: 'Poppins', sans-serif;
+    color: #fff2bc;
 }
 
-img {
-    width: 100px;
-    height: 80px;
-    
-}.logo {
-    float: left;
-    text-align: center;
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-evenly;
+    float: right;
 }
 
-a {
-    color: black;
-    font-style: normal;
+nav ul li a {
+    color: #fff2bc;
+    font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
+}   
+
+/* Responsive BreakPoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
 }
 
 table {
