@@ -13,18 +13,20 @@ nav {
     display: flex;
     background-color: #383636;
     padding: 10px;
-    justify-content: space-between;
 }
 
 nav img {
     float: right;
     width: 20px;
     height: 20px;
+    float: left;
 }
 
 nav .logo {
     font-family: 'Poppins', sans-serif;
     color: #fff2bc;
+    float: left;
+    
 }
 
 nav ul {
@@ -37,6 +39,7 @@ nav ul {
 
 nav ul li a {
     color: #fff2bc;
+    justify-content: space-between;
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
 }   
