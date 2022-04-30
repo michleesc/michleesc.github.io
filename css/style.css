@@ -106,6 +106,12 @@ nav ul li.btn.hide i:before{
     opacity: 0;
   }
 
+  /* contact us */
+  .wrapper {
+    margin: inherit;
+    display: grid;
+  }
+
 }
 
 /* Contact Us */
@@ -125,7 +131,6 @@ nav ul li.btn.hide i:before{
 }
 
 h2 {
-  background: aliceblue;
   color:#000;
 }
 form, input, textarea, button {
@@ -142,6 +147,20 @@ form, input, textarea, button {
 .form-group textarea {
   width: 100%;
   padding: 1 rem 0.8rem;
+}
+
+.submit {
+  background: 		#696969;
+  color: #fff2bc;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.submit:hover {
+  color: aliceblue;
 }
 
 /* footer */
