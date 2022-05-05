@@ -175,11 +175,11 @@ form, input, textarea, button {
   padding: 10px;
   margin: 0 auto;
   border-radius: 8px;
-  color: black;
+  font-weight: bold;
 }
 
 #status.success {
-  background-color: rgb(211, 250, 153);
+  background-color: rgb(172, 244, 64);
   color: white;
   animation: status 4s ease forwards;
 }

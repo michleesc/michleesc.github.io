@@ -4,6 +4,7 @@ var form = document.getElementById("my-form");
       event.preventDefault();
       var status = document.getElementById("status");
       var data = new FormData(event.target);
+
       fetch(event.target.action, {
         method: form.method,
         body: data,
@@ -12,8 +13,9 @@ var form = document.getElementById("my-form");
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
           form.reset()
+          status.classList.add('success');
+          status.innerHTML = "Thanks for your submission!";
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
@@ -24,6 +26,7 @@ var form = document.getElementById("my-form");
           })
         }
       }).catch(error => {
+        status.classList.add('error');
         status.innerHTML = "Oops! There was a problem submitting your form"
       });
     }
