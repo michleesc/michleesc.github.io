@@ -6,9 +6,8 @@
 }
 
 body {
-  background-color: #383636;
-  font-family: 'Poppins', sans-serif;
-  color:#000;
+  background-color: black;
+  color: #000;
 }
 
 /* navigation bar */
@@ -82,6 +81,7 @@ nav ul li.btn{
 nav ul li.btn.hide i:before{
   content: '\f00d';
 }
+
 @media all and (max-width: 900px){
   /* navbar */
   nav{
@@ -106,47 +106,51 @@ nav ul li.btn.hide i:before{
     opacity: 0;
   }
 
-  /* contact us */
-  .wrapper {
-    margin: inherit;
-    display: grid;
-  }
-
 }
 
 /* Contact Us */
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  color: #fff2bc;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
 
 .wrapper {
-  background: aliceblue;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
-  height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0;
   line-height: 1.5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 5px solid #fff2bc;
+  background-color: #383636;
 }
 
-h2 {
-  color:#000;
+.form-group label {
+  width: 100%;
+  margin-top: 20px;
 }
+
 form, input, textarea, button {
   font-size: initial;
 }
 
-.form-group label {
-  display: block;
-  margin: 2rem 0 0.5rem 0;
-}
 
 .form-group input[type= "text"],
 .form-group input[type= "email"],
 .form-group textarea {
   width: 100%;
-  padding: 1 rem 0.8rem;
+  padding: 5px;
+  border: 1px solid;
 }
 
 .submit {
@@ -157,10 +161,47 @@ form, input, textarea, button {
   margin-top: 10px;
   padding: 10px;
   border: none;
+  width: 100%;
 }
 
 .submit:hover {
   color: aliceblue;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: black;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  color: white;
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: all;
+  }
 }
 
 /* footer */
