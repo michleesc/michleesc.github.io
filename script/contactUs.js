@@ -15,7 +15,7 @@ var form = document.getElementById("my-form");
         if (response.ok) {
           form.reset()
           status.classList.add('success');
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Thanks for your Contact Me!";
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
