@@ -8,6 +8,7 @@
 
 body {
   background-color: aliceblue;
+  position: block;
 }
 
 /* navigation bar */
@@ -208,14 +209,14 @@ form, input, textarea, button {
 /* footer */
 footer {
   bottom: 0;
-  left: 0;
   right: 0;
+  left: 0;
   background: #383636;
   color: #fff2bc;
   height: auto;
+  width: 100%;
   max-width: 100%;
-  overflow-x: hidden ;
-  padding-top: 40px; 
+  padding-top: 40px;
 }
 
 .footer-content {

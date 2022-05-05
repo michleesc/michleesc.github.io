@@ -19,8 +19,10 @@ var form = document.getElementById("my-form");
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
+              status.classList.add('error');
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
             } else {
+              status.classList.add('error');
               status.innerHTML = "Oops! There was a problem submitting your form"
             }
           })
