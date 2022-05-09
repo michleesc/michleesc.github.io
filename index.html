@@ -3,34 +3,51 @@
    <meta charset="utf-8">
    <title>Home</title>
    <link rel="stylesheet" href="./css/style.css">
-   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="script/script.js"></script>
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&family=Roboto+Condensed&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script/script.js"></script>
+
    </head>
+   <!-- Start Body -->
+   <body>
+      <!-- Start Navigation Bar -->
+      <nav id="navbar">
+         <ul id="menu">
+           <img class ="logo-pic" src="img/logo-m-with-background.jpg" alt="logoo">
+            <li class="logo">MICHLEE SC</li>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#project">Project</a></li>
+            <li class="items"><a href="#contact">Contact Us</a></li>
+            <li class="items"><a href="#about">About</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+         </ul>
+      </nav>
+      <!-- End Navigation Bar -->
 
-   <!-- Navigation Bar -->
-<nav id="navbar">
-   <ul id="menu">
-     <img class ="logo-pic" src="img/logo-m-with-background.jpg" alt="logoo">
-      <li class="logo">MICHLEE SC</li>
-      <li class="items"><a href="#home">Home</a></li>
-      <li class="items"><a href="#project">Project</a></li>
-      <li class="items"><a href="#contact">Contact Us</a></li>
-      <li class="items"><a href="#about">About</a></li>
-      <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
-   </ul>
-</nav>
+      <!-- Start HomePage -->
+      <section id="home">   
+         <div class="container">
+            <img class="profile" src="img/profile.png" alt="profilee">
+            <div class="nama">Michlee Septian Chandra</div>
+            <ul >
+               <li class="skill">Web Developer</li>
+               <li class="skill">Mobile Developer</li>
+            </ul>
+         </div>
+      </section>
+      <!-- End HomePage -->
 
-<!-- Body -->
-<body>
+      <!-- Start ProjectPage -->
 
-   <!-- contact us -->
-   <section id="contact">
+      <!-- End ProjectPage -->
+      
+      <!-- Start Contact Us -->
+      <section id="contact">
       <div class="wrapper">
          <h2>CONTACT US</h2>
          <form action="https://formspree.io/f/xlezokyg" method="POST" id="my-form">
@@ -55,8 +72,9 @@
       <div id="status"></div>
    </section>
    <script src="script/contactUs.js"></script>
+   <!-- End Contact Us -->
    
-   <!-- footer -->
+   <!-- Start footer -->
    <footer>
       <div class="footer-content">
          <h3 id="about">About</h3>
@@ -74,5 +92,9 @@
          <p>copyright &copy;2022 Michlee Septian Chandra</p>
       </div>
    </footer>
+   <!-- End Footer -->
+
 </body>
+<!-- End Body -->
+
 </html>
